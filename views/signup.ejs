@@ -1,0 +1,39 @@
+<%- include('partials/header') -%>
+
+<body id="loginPage" class="main-bg">
+  <div class="wrapper">
+    <% if (locals.messages.errors) { %>
+      <% messages.errors.forEach( el => { %>
+          <div class="alert alert-danger"><%= el.msg %></div>
+      <% }) %>    
+  <% } %>
+  <% if (locals.messages.info) { %>
+      <% messages.info.forEach( el => { %>
+          <div class="alert alert-info"><%= el.msg %></div>
+      <% }) %>    
+  <% } %>
+  <form action="/signup" method="POST">
+    <h2 class="title-font">YESTODAY</h2>
+      <div class="inputBox">
+          <input class="loginInput" type="text" class="form-control" id="userName" name="userName" placeholder="USERNAME">
+          <i class="fa-solid fa-user" style="color: #000000;"></i>
+      </div>
+      <div class="inputBox">
+        <input class="loginInput" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="email" placeholder="EMAIL">
+        <i class="fa-solid fa-envelope" style="color: #000000;"></i>
+      </div>
+      <div class="inputBox">
+        <input class="loginInput" type="password" class="form-control" id="password" name="password" placeholder="PASSWORD">
+        <i class="fa-solid fa-lock" style="color: #000000;"></i>
+      </div>
+      <div class="inputBox">
+          <input class="loginInput" type="password" class="form-control" id="confirmPassword" name="confirmPassword" placeholder="CONFIRM PASSWORD">
+          <i class="fa-solid fa-lock" style="color: #000000;"></i>
+      </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+      <div class="registerLink">
+        <p>Already have an account? <a href="/login">Login here!</a></p>
+      </div>
+    </form>
+  </div>
+</body>

@@ -1,11 +1,31 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Yestoday</title>
-</head>
-<body>
-    <h1>yestoday</h1>
-</body>
-</html>
+<%- include('partials/header') -%>
+
+    <div class="min-h-screen main-bg">
+        <div class="navbar main-font">
+            <div class="flex-1">
+                <a class="btn btn-ghost normal-case text-xl"></a>
+            </div>
+            <div class="flex-none">
+                <ul class="menu menu-horizontal px-1">
+                    <li><a class="loginNavFont" href="/login">LOG IN</a></li>
+                    <li><a class="loginNavFont" href="/signup">SIGN UP</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="hero">
+            <div class="hero-content text-center title-center">
+            <div>
+                <h1 class="font-bold title-font">YESTODAY</h1>
+                <p class="main-pad main-font main-font-size">*Whether it be from yesterday or today, share your captured memories in an open-world community where nostalgia is guaranteed*</p>
+                <button class="btn joinBtn glass main-font"><a href="/signup">Join Now!</a></button>
+            </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer footer-center p-4 footer-color bg-base-300 text-base-content">
+        <div>
+          <p>© 2023 Steve Magana</p>
+        </div>
+    </footer>
+
+<%- include('partials/footer') -%>
