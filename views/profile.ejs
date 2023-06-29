@@ -1,0 +1,89 @@
+<%- include('partials/header') -%>
+
+<body class="feed-bg">
+  <header>
+    <div class="logo title-font">YESTODAY</div>
+    <div class="hamburger">
+      <div class="line"></div>
+      <div class="line"></div>
+      <div class="line"></div>
+    </div>
+    <nav class="nav-bar">
+      <ul>
+        <li>
+          <a href="/feed"><i class="fa-solid fa-house" style="color: #212526;"></i></a>
+        </li>
+        <li>
+          <a href="/newPost"><i class="fa-solid fa-plus" style="color: #212526;"></i></a>
+        </li>
+        <li>
+          <a href="/profile"><i class="fa-solid fa-user" style="color: #212526;"></i></a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <div>
+      <div class="userInfo">
+        <p><%= user.userName %></p>
+        <p><%= user.email %></p>
+        <a href="/logout" class="btn">Logout</a>
+      </div>
+      <div id="loginPage">
+        <ul>
+        <% for(var i=0; i<posts.length; i++) {%>
+          <li class="col-6 justify-content-between mt-5">
+            <div class="card card-compact w-96 bg-base-100 shadow-xl">
+              <figure><img class="img-fluid" src="<%= posts[i].image%>"></figure>
+              <div class="card-body">
+                <div class="likeDelBtns">
+                  <form
+                    action="/feed/likePost/<%= posts[i]._id %>?_method=PUT"
+                    method="POST"
+                    >
+                    <button class="btn likeBtn fa-solid fa-heart" style="color: #e2a2a2;" type="submit"></button>
+                  </form>
+                  <%if(posts[i].user._id == user.id){ %>
+                    <form
+                      action="/feed/deletePost/<%= posts[i]._id %>?_method=DELETE"
+                      method="POST"
+                    >
+                      <button class="btn likeBtn fa-solid fa-trash-can" style="color: #808080;" type="submit"></button>
+                    </form>
+                  <%}%>
+                </div>
+                <div>
+                  <h3 class="numLikes"><%= posts[i].likes %> likes</h3>
+                </div>
+                <div>
+                  <p><strong><%=posts[i].user.userName%>: </strong><%= posts[i].caption %></p>
+                </div>
+                <ul>
+                  <%for(var j=0; j<comments.length; j++){ %>
+                    <%if(comments[j].post.equals(posts[i]._id)){ %>
+                      <li>
+                        <p class="commentSection"><strong><%=comments[j].user.userName%>: </strong><%=comments[j].comment%></p>
+                      </li>
+                    <% } %>
+                  <% } %>
+                </ul>
+                <div>
+                  <form action="/comment/createComment/<%=posts[i]._id%>" method="POST">
+                    <div class="commentAdd">
+                        <input type="text" class="commentInput" id="comment" name="comment" placeholder="Comment">
+                        <button type="submit" class="btn commentBtn">Add</button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </li>
+        <% } %>
+        </ul>  
+      </div>  
+    </div>
+  </div>
+
+  <script src="../js/main.js"></script>
+</body>
+
+<%- include('partials/footer') -%>

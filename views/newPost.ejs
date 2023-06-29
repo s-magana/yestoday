@@ -1,0 +1,43 @@
+<%- include('partials/header') -%>
+
+<body class="feed-bg">
+  <header>
+    <div class="logo title-font">YESTODAY</div>
+    <div class="hamburger">
+      <div class="line"></div>
+      <div class="line"></div>
+      <div class="line"></div>
+    </div>
+    <nav class="nav-bar">
+      <ul>
+        <li>
+          <a href="/feed"><i class="fa-solid fa-house" style="color: #212526;"></i></a>
+        </li>
+        <li>
+          <a href="/newPost"><i class="fa-solid fa-plus" style="color: #212526;"></i></a>
+        </li>
+        <li>
+          <a href="/profile"><i class="fa-solid fa-user" style="color: #212526;"></i></a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+    <div id="loginPage">
+        <div class="wrapper newPostCenter">
+            <form action="/feed/createPost" enctype="multipart/form-data" method="POST">
+                <h2 class="main-font newPostFont">ADD A POST</h2>
+                <div class="inputBox">
+                    <textarea class="textarea form-control" id="caption" name="caption" placeholder="CAPTION"></textarea>
+                </div>
+                <div class="inputBox">
+                    <input type="file" class="postInput file-input file-input-bordered w-full max-w-x form-control" id="imageUpload" name="file">
+                </div>
+                <button type="submit" class="btn uploadBtn" value="Upload">Upload!</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="../js/main.js"></script>
+</body>
+
+<%- include('partials/footer') -%>
