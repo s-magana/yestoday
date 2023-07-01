@@ -1,0 +1,456 @@
+.main-bg {
+	background-image: url("../images/train.gif") !important;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+    opacity: 0.85;
+}
+
+.title-font {
+    font-family: "Fraunces",Helvetica,Arial,sans-serif;
+    color: #FBCC05;
+}
+
+.main-font {
+    font-family: "Gidugu",Helvetica,Arial,sans-serif;
+    color: #fff;
+    text-transform: uppercase;
+    line-height: 1;
+}
+
+.main-font-size {
+    font-size: 55px;
+    font-style: italic;
+}
+
+.loginNavFont {
+    font-family: "Gidugu",Helvetica,Arial,sans-serif;
+    font-size: 25px;
+}
+
+.menu-horizontal a:hover {
+    background: #DEDED1;
+}
+
+.title-center {
+    margin-top: 10rem;
+}
+
+.joinBtn {
+    font-size: 20px;
+}
+
+.joinBtn:hover {
+    background: #DEDED1;
+    color: #212526;
+}
+
+.footer-color {
+    background-color: rgba(83, 85, 78, 1) !important;
+}
+
+#loginPage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.navbar {
+    display: flex !important;
+}
+
+.wrapper {
+    width: 420px;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    color: #fff;
+    border-radius: 10px;
+    padding: 30px 40px;
+}
+
+.wrapper h2 {
+    font-size: 55px;
+    text-align: center;
+}
+
+.wrapper .inputBox {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin: 30px 0;
+}
+
+.inputBox .loginInput {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    border-radius: 40px;
+    font-size: 16px;
+    color: #fff;
+    padding: 20px 45px 20px 20px;
+}
+
+.inputBox input::placeholder {
+    color: #fff;
+}
+
+.inputBox i {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+}
+
+.wrapper .btn {
+    width: 100%;
+    height: 45px;
+    background: #F6F6EE;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    font-size: 16px;
+    color: #333;
+    font-weight: 600;
+}
+
+.wrapper .registerLink {
+    font-size: 14.5px;
+    text-align: center;
+    margin: 20px 0 15px;
+}
+
+.registerLink p a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.registerLink p a:hover {
+    text-decoration: underline;
+}
+
+.feed-bg {
+    background-image: url("../images/feed-bg.png") !important;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+    opacity: 0.85;
+}
+
+header {
+    width: 100%;
+    height: 80px;
+    background: #F6F6EE;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 100px;
+}
+
+header .logo {
+    font-size: 45px;
+}
+
+.hamburger {
+    display: none;
+}
+
+.nav-bar ul {
+    display: flex;
+}
+
+.nav-bar ul li a {
+    display: block;
+    color: #212526;
+    font-size: 20px;
+    padding: 10px 25px;
+    border-radius: 50px;
+    transition: 0.2s;
+    margin: 0 5px;
+}
+
+nav ul li a:hover {
+    background: #DEDED1;
+}
+
+@media only screen and (max-width: 1320px) {
+    header {
+        padding: 0 50px;
+    }
+}
+
+@media only screen and (max-width: 1100px) {
+    header {
+        padding: 0 30px;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .hamburger {
+        display: block;
+        cursor: pointer;
+    }
+    .hamburger .line {
+        width: 30px;
+        height: 3px;
+        background: #212526;
+        margin: 6px 0;
+    }
+    .nav-bar {
+        height: 0;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        right: 0;
+        width: 100vw;
+        background: #F6F6EE;
+        transition: 0.5s;
+        overflow: hidden;
+        z-index: 999;
+    }
+
+    .nav-bar.active {
+        height: 250px;
+    }
+
+    .nav-bar ul {
+        display: block;
+        width: fit-content;
+        margin: 30px auto 0 auto;
+        text-align: center;
+        transition: 0.5s;
+        opacity: 0;
+    }
+
+    .nav-bar.active ul {
+        opacity: 1;
+    }
+    
+    .nav-bar ul li a {
+        margin-bottom: 12px;
+        color: red;
+    }
+}
+
+.w-96 {
+    width: 30rem !important;
+}
+
+.mt-5 {
+    margin-bottom: 1.25rem !important;
+}
+.likeBtn {
+    border: 1px solid rgba(187, 187, 187, 1);
+}
+
+.fa-heart, .fa-trash-can {
+    font-size: 20px;
+}
+
+.likeDelBtns {
+    display: flex;
+    justify-content: space-between;
+}
+
+.numLikes {
+    font-weight: bold;
+}
+
+.commentInput {
+    width: 100%;
+    border: 1px solid rgba(187, 187, 187, 1);
+    border-radius: 5px;
+    padding-left: 5px;
+}
+
+.commentAdd {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.commentBtn {
+    border: 1px solid rgba(187, 187, 187, 1);
+}
+
+.inputBox textarea, .postInput{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid rgba(76, 82, 92, 0.8);
+    font-size: 16px;
+    color: #fff;
+}
+
+.inputBox textarea::placeholder {
+    color: rgba(76, 82, 92, 1);
+    font-weight: 600;
+}
+
+.wrapper .newPostFont {
+    font-size: 80px;
+    color: #F6F6EE;
+}
+
+.newPostCenter {
+    margin-bottom: 70px;
+}
+
+.userInfo {
+    width: 600px;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    color: #fff;
+    border-radius: 60px;
+    padding: 30px 40px;
+    margin: 15px 0 0 15px
+}
+
+.userInfo p {
+    font-size: 40px;
+    font-weight: 900;
+    color: #212526;
+}
+
+.userInfo a:hover {
+    background: #DEDED1;
+}
+
+.userInfo .btn {
+    background: #F6F6EE;
+}
+
+.commentSection {
+    font-size: 12.5px;
+    color: rgba(31, 41, 55, 0.8);
+}
+
+/* Media Query for Mobile Devices */
+@media (max-width: 514px) {
+    .title-font {
+        font-size: 3.8rem;
+        line-height: 1;
+    }
+    .main-pad {
+        padding: 1rem;
+    }
+    .main-font-size {
+        font-size: 20px;
+    }
+    .w-96 {
+        width: 23rem !important;
+    }
+    .newPostCenter {
+        width: 370px;
+    }
+    .userInfo {
+        width: 350px;
+    }
+    .userInfo p {
+        font-size: 25px;
+    }
+}
+  
+/* Media Query for low resolution  Tablets, Ipads */
+@media (min-width: 515px) and (max-width: 767px) {
+    .title-font {
+        font-size: 5rem;
+        line-height: 1;
+    }
+    .main-pad {
+        padding: 1rem 3rem;
+    }
+    .main-font-size {
+        font-size: 25px;
+    }
+    .w-96 {
+        width: 28rem !important;
+    }
+    .userInfo {
+        width: 420px;
+    }
+    .userInfo p {
+        font-size: 30px;
+    }
+}
+  
+/* Media Query for Tablets Ipads portrait mode */
+@media (min-width: 768px) and (max-width: 1024px){
+    .title-font {
+        font-size: 7rem;
+        line-height: 1;
+    }
+    .main-pad {
+        padding: 1rem 8rem;
+    }
+    .main-font-size {
+        font-size: 30px;
+    }
+    .w-96 {
+        width: 29rem !important;
+    }
+    .userInfo {
+        width: 500px;
+    }
+    .userInfo p {
+        font-size: 35px;
+    }
+}
+  
+/* Media Query for Laptops and Desktops */
+@media (min-width: 1025px) and (max-width: 1280px){
+    .title-font {
+        font-size: 8.5rem;
+        line-height: 1;
+    }
+    .main-pad {
+        padding: 1rem 11rem;
+    }
+    .main-font-size {
+        font-size: 35px;
+    }
+    .w-96 {
+        width: 30rem !important;
+    }
+    .userInfo {
+        width: 550px;
+    }
+    .userInfo p {
+        font-size: 40px;
+    }
+}
+  
+/* Media Query for Large screens */
+@media (min-width: 1281px) {
+    .title-font {
+        font-size: 9rem;
+        line-height: 1;
+    }
+    .main-pad {
+        padding: 1rem 15rem;
+    }
+    .main-font-size {
+        font-size: 34px;
+    }
+    .w-96 {
+        width: 31rem;
+    }
+    .userInfo {
+        width: 600px;
+    }
+    .userInfo p {
+        font-size: 40px;
+    }
+}
