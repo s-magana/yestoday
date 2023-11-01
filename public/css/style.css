@@ -314,7 +314,7 @@ nav ul li a:hover {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     color: #fff;
     border-radius: 60px;
-    padding: 30px 40px;
+    padding: 30px 30px;
     margin: 15px 0 0 15px
 }
 
@@ -359,7 +359,12 @@ nav ul li a:hover {
         width: 350px;
     }
     .userInfo p {
-        font-size: 25px;
+        font-size: 20px;
+    }
+    .userInfo .btn {
+        padding-left: 0.8rem !important;
+        padding-right: 0.8rem !important;
+        font-size: 0.7rem !important;
     }
 }
   
@@ -379,10 +384,10 @@ nav ul li a:hover {
         width: 28rem !important;
     }
     .userInfo {
-        width: 420px;
+        width: 485px;
     }
     .userInfo p {
-        font-size: 30px;
+        font-size: 25px;
     }
 }
   
@@ -402,10 +407,10 @@ nav ul li a:hover {
         width: 29rem !important;
     }
     .userInfo {
-        width: 500px;
+        width: 600px;
     }
     .userInfo p {
-        font-size: 35px;
+        font-size: 30px;
     }
 }
   
@@ -425,10 +430,10 @@ nav ul li a:hover {
         width: 30rem !important;
     }
     .userInfo {
-        width: 550px;
+        width: 650px;
     }
     .userInfo p {
-        font-size: 40px;
+        font-size: 35px;
     }
 }
   
@@ -448,9 +453,9 @@ nav ul li a:hover {
         width: 31rem;
     }
     .userInfo {
-        width: 600px;
+        width: 650px;
     }
     .userInfo p {
-        font-size: 40px;
+        font-size: 35px;
     }
 }
