@@ -3,13 +3,11 @@ Whether it be from yesterday or today, share your captured memories on Yestoday'
 
 **Link to project:** https://yestoday.cyclic.app
 
-<img width="947" alt="gif of yestoday" src="../images/yestoday-rm.gif">
-
 ## How It's Made:
 
 **Tech used:** JavaScript, Node.js, Express.js, MongoDB, Passport.js, EJS, CSS, Tailwind
 
-Using the Model-View-Controller (MVC) framework to organize my code, I began this project by first connecting to the database. I then carefully figured out how many models I was going to need in order for each major element of my project to work properly. In this case, I had three models, a user, posts, and comments model. With my models finished, I decdied to add authentication with local email login using passport.js as well as set up multer and cloudinary for image upload abilities. Afterwards, I began to build the routes, controllers, and views in that respective order. To finish off, I added sessions and styled everything.
+Using the Model-View-Controller (MVC) framework to organize my code, I began this project by first connecting to the database. I then carefully figured out how many models I was going to need in order for each major element of my project to work properly. In this case, I had three models, a user, posts, and comments model. With my models finished, I decided to add authentication with local email login using passport.js as well as set up multer and cloudinary for image upload abilities. Afterwards, I began to build the routes, controllers, and views in that respective order. To finish off, I added sessions and styled everything.
 
 ## Optimizations
 
