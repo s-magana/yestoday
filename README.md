@@ -3,6 +3,7 @@ Whether it be from yesterday or today, share your captured memories on Yestoday'
 
 **Link to project:** https://yestoday.cyclic.app
 
+https://github.com/s-magana/yestoday/assets/113574110/6269ae09-61ef-43c1-810b-a5ce87040237
 
 ## How It's Made:
 
