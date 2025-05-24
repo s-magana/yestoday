@@ -11,7 +11,7 @@ https://github.com/s-magana/yestoday/assets/113574110/6269ae09-61ef-43c1-810b-a5
 
 Using the Model-View-Controller (MVC) framework to organize my code, I began this project by first connecting to the database. I then carefully figured out how many models I was going to need in order for each major element of my project to work properly. In this case, I had three models, a user, posts, and comments model. With my models finished, I decided to add authentication with local email login using passport.js as well as set up multer and cloudinary for image upload abilities. Afterwards, I began to build the routes, controllers, and views in that respective order. To finish off, I added sessions and styled everything.
 
-## Optimizations
+## Optimizations:
 
 If I were to improve this app, I would first use React for the front-end. The main reason for this is to avoid the whole page refreshing whenever a post is liked or deleted. Another optimization for the actual app's functionality is to add the feature of being able to visit other user's profiles.  
 
